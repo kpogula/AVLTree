@@ -4,8 +4,7 @@ import org.junit.FixMethodOrder;
 import org.junit.Test;
 import org.junit.runners.MethodSorters;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNull;
+import static org.junit.Assert.*;
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class AvlTreeTest {
@@ -141,5 +140,21 @@ public class AvlTreeTest {
         AvlTree.delete(15);
         assertNull(AvlTree.find(15));
     }
+
+    @Test
+    public void test11() {
+        AvlTree AvlTree = new AvlTree();
+        AvlTree.insert(5);
+        AvlTree.insert(3);
+        AvlTree.insert(8);
+        AvlTree.insert(6);
+        AvlTree.delete(8);
+
+        assertNull(AvlTree.find(20));
+
+    }
+
+
+
 }
 
