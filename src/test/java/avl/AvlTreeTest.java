@@ -15,8 +15,8 @@ public class AvlTreeTest {
     @Test
     public void test01() {
         AvlTree AvlTree = new AvlTree();
-        java.lang.Class<?> wildcardClass1 = AvlTree.getClass();
-        org.junit.Assert.assertNotNull(wildcardClass1);
+        java.lang.Class<?> avlTreeClass = AvlTree.getClass();
+        org.junit.Assert.assertNotNull(avlTreeClass);
     }
 
     @Test
