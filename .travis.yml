@@ -1,4 +1,7 @@
-language : java
+language: java
+jdk:
+  - openjdk8
 
 script:
-  - mvn clean install
+  - mvn clean
+  - mvn -DmemoryInMB=2000 -Dcores=2 evosuite:generate evosuite:export test
