@@ -150,7 +150,7 @@ public class AvlTreeTest {
         AvlTree.insert(6);
         AvlTree.delete(8);
 
-        assertNull(AvlTree.find(20));
+        assertNull(AvlTree.find(8));
 
     }
 
